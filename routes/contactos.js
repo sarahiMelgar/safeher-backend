@@ -105,10 +105,7 @@ app.put("/contactos/:id", verificarToken, (req, res) => {
   );
 });
 
-// ============================
-// ELIMINAR CONTACTO
-// ============================
-// ============================
+
 // ELIMINAR CONTACTO
 // ============================
 app.delete("/contactos/:id", verificarToken, (req, res) => {
