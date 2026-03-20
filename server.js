@@ -823,8 +823,9 @@ const fotoUrl = usuaria.foto
     console.log("Usuario desconectado:", socket.id);
   });
 });
-server.listen(3000, () => {
-  console.log("Servidor corriendo en puerto 3000 💜");
+const PORT = process.env.PORT || 3000;
+server.listen(PORT, () => {
+  console.log(`Servidor corriendo en puerto ${PORT} 💜`);
   console.log("Endpoints disponibles:");
   console.log("  POST /register - Registro usuaria");
   console.log("  POST /register-vendedora - Registro vendedora");
